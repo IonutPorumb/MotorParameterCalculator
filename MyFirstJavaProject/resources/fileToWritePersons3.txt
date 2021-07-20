@@ -1,0 +1,2 @@
+1)Traian;Popescu;67;1.76;80.0;Sat Nov 23 00:00:00 EET 2019;Calea Motilor nr.3;Cluj-Napoca;1235467890112
+2)Dorel;Ionescu;53;1.8;89.0;Wed Nov 23 00:00:00 EET 1938;Bld. 21 Decembrie nr 89;Oradea;1234567890123

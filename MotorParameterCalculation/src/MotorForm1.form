@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="MotorForm1">
+  <grid id="27dc6" binding="motorPanel" layout-manager="GridLayoutManager" row-count="28" column-count="14" same-size-horizontally="false" same-size-vertically="false" hgap="50" vgap="-1">
+    <margin top="50" left="50" bottom="50" right="50"/>
+    <constraints>
+      <xy x="20" y="20" width="676" height="1380"/>
+    </constraints>
+    <properties>
+      <background color="-9404550"/>
+    </properties>
+    <border type="bevel-raised" title="Motor Parameters" title-justification="2" title-position="1"/>
+    <children>
+      <component id="2c78e" class="javax.swing.JComboBox" binding="motorVoltage">
+        <constraints>
+          <grid row="7" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="220"/>
+            <item value="230"/>
+            <item value="240"/>
+            <item value="380"/>
+            <item value="400"/>
+            <item value="415"/>
+            <item value="440"/>
+            <item value="460"/>
+            <item value="480"/>
+            <item value="500"/>
+            <item value="575"/>
+            <item value="660"/>
+            <item value="690"/>
+          </model>
+          <toolTipText value="Select the motor nominal voltage value in V"/>
+        </properties>
+      </component>
+      <component id="82406" class="javax.swing.JLabel" binding="motorVoltageLabel">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="2c78e"/>
+          <text value="Motor Voltage [V]"/>
+        </properties>
+      </component>
+      <component id="6538d" class="javax.swing.JLabel" binding="motorSpeedLabel">
+        <constraints>
+          <grid row="9" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="c34db"/>
+          <text value="Motor Synchronous speed [rpm]"/>
+        </properties>
+      </component>
+      <component id="c34db" class="javax.swing.JComboBox" binding="motorSynchronousSpeed">
+        <constraints>
+          <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="375"/>
+            <item value="500"/>
+            <item value="600"/>
+            <item value="750"/>
+            <item value="1000"/>
+            <item value="1500"/>
+            <item value="3000"/>
+          </model>
+          <toolTipText value="Select the motor nominal speed value in rpm"/>
+        </properties>
+      </component>
+      <component id="c142e" class="javax.swing.JLabel" binding="motorPowerFactorLabel">
+        <constraints>
+          <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="4ac63"/>
+          <text value="Motor Power Factor"/>
+        </properties>
+      </component>
+      <component id="4ac63" class="javax.swing.JTextField" binding="motorPowerFactor">
+        <constraints>
+          <grid row="13" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Introduce the motor power factor"/>
+        </properties>
+      </component>
+      <component id="a9c04" class="javax.swing.JLabel" binding="motorPhaseNoLabel">
+        <constraints>
+          <grid row="15" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Power Supply Phase Number"/>
+        </properties>
+      </component>
+      <component id="d2647" class="javax.swing.JComboBox" binding="motorPhaseNumber">
+        <constraints>
+          <grid row="16" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="3"/>
+          </model>
+          <toolTipText value="Select the motor number of phases"/>
+        </properties>
+      </component>
+      <component id="74ea8" class="javax.swing.JLabel" binding="motorEfficiencyLabel">
+        <constraints>
+          <grid row="18" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="d2647"/>
+          <text value="Motor Efficiency"/>
+        </properties>
+      </component>
+      <component id="90e6d" class="javax.swing.JTextField" binding="motorEfficiency">
+        <constraints>
+          <grid row="19" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Introduce the motor efficiency"/>
+        </properties>
+      </component>
+      <component id="486ca" class="javax.swing.JButton" binding="calculateButton" default-binding="true">
+        <constraints>
+          <grid row="21" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Calculate"/>
+        </properties>
+      </component>
+      <component id="ad603" class="javax.swing.JTextField" binding="motorPower">
+        <constraints>
+          <grid row="24" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e7c3c" class="javax.swing.JTextField" binding="motorTorque">
+        <constraints>
+          <grid row="26" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="afaa1" class="javax.swing.JLabel" binding="motorPowerLabel">
+        <constraints>
+          <grid row="23" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="ad603"/>
+          <text value="Calculated Motor Power [kW]"/>
+        </properties>
+      </component>
+      <component id="6a0ba" class="javax.swing.JLabel" binding="motorTorqueLabel">
+        <constraints>
+          <grid row="25" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="e7c3c"/>
+          <text value="Calculated Motor Torque [Nm]"/>
+        </properties>
+      </component>
+      <component id="28955" class="javax.swing.JTextField" binding="motorCurrent">
+        <constraints>
+          <grid row="3" column="6" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+          <toolTipText value="Introduce the motor nominal current in A"/>
+        </properties>
+      </component>
+      <hspacer id="3d807">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="87009">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e861c">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="ec381" class="javax.swing.JLabel" binding="motorCurrentLabel">
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="28955"/>
+          <text value="Motor Current [A]"/>
+        </properties>
+      </component>
+      <hspacer id="ff91e">
+        <constraints>
+          <grid row="2" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="4aab1">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="d7bcb">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="c6226">
+        <constraints>
+          <grid row="7" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="eacf6">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="89e4e">
+        <constraints>
+          <grid row="10" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="1c221">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="fdb88">
+        <constraints>
+          <grid row="13" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e3186">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="44a13">
+        <constraints>
+          <grid row="12" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="3e2b">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="999da">
+        <constraints>
+          <grid row="15" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="53cbc">
+        <constraints>
+          <grid row="26" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="4b751">
+        <constraints>
+          <grid row="24" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e9607">
+        <constraints>
+          <grid row="21" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="b6101">
+        <constraints>
+          <grid row="19" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="bffe9">
+        <constraints>
+          <grid row="16" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="1fe99">
+        <constraints>
+          <grid row="27" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="100"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <hspacer id="fd840">
+        <constraints>
+          <grid row="26" column="1" row-span="2" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="47844">
+        <constraints>
+          <grid row="25" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="faced">
+        <constraints>
+          <grid row="24" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="38be6">
+        <constraints>
+          <grid row="23" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="51a13">
+        <constraints>
+          <grid row="21" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="46682">
+        <constraints>
+          <grid row="19" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="e65d5">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="2b91b">
+        <constraints>
+          <grid row="9" column="7" row-span="1" col-span="7" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="f76c3">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="5" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="e7cfc">
+        <constraints>
+          <grid row="17" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="f7320">
+        <constraints>
+          <grid row="20" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="43ced">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="d9c85">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="b02e9">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="149eb">
+        <constraints>
+          <grid row="14" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+      <vspacer id="27b20">
+        <constraints>
+          <grid row="22" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="50"/>
+          </grid>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>

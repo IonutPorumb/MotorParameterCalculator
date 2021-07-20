@@ -1,0 +1,2 @@
+Traian;Popescu;67;1.76;80;23-11-2019;Calea Motilor nr.3;Cluj-Napoca;1235467890112
+Dorel;Ionescu;53;1.8;89;23-11-1938;Bld. 21 Decembrie nr 89;Oradea;1234567890123
